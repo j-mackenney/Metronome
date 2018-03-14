@@ -8,32 +8,35 @@
 	</head>
 	
 	<body>
-		<h1>Metronome</h1>
-					
-		<table>
-			<tr>
-				<td>BPM: </td>
-				<td><input type="number" name="bpm" value="120"></td>
-			</tr>
-			<tr>
-				<td>Time Signature: </td>
-				<td>
-					<input type="number" name="upper" value="4"> 
-					/ 
-					<select name="lower">
-						<option value="2">2</option>
-						<option value="4" selected="selected">4</option>
-						<option value="8">8</option>
-						<option value="16">16</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input id="toggleMetronome" type="button" onclick="startMetronome()" value="Start"></td>
-			</tr>
-		</table>
-	
+		<div id="header">
+			<h1>Metronome</h1>
+		</div>
+		
+		<div class="input-container">
+			<table>
+				<tr>
+					<td class="label">BPM: </td>
+					<td><input class="input" type="number" name="bpm" value="120"></td>
+				</tr>
+				<tr>
+					<td class="label">Time Signature: </td>
+					<td>
+						<input class="input" type="number" name="upper" value="4"> 
+						/ 
+						<select class="input" name="lower">
+							<option value="2">2</option>
+							<option value="4" selected="selected">4</option>
+							<option value="8">8</option>
+							<option value="16">16</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input id="toggleMetronome" class="button" type="button" onclick="startMetronome()" value="Start"></td>
+				</tr>
+			</table>
+		</div>
 	</body>
 	
 </html>

@@ -15,7 +15,7 @@ function startMetronome() {
 	// set the amount of beats per bar
 	beats = document.querySelector('[name="upper"]').value;
 	
-	// set the bpm depending on type of duration of beat (minim (bpm/2), crotchet, quaver(bpm*2), semiquaver(bpm*4)) 
+	// set the bpm depending on duration of beat (minim, crotchet, quaver, semiquaver) 
 	bpm *= (document.querySelector('[name="lower"]').value / 4);
 	
 	intervalID = setInterval(playSound, (60000/bpm));

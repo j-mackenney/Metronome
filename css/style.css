@@ -3,3 +3,18 @@ body, html {
 	margin: 0;
 	padding: 0;
 }
+
+.input-container {
+	padding: 20px;
+}
+
+.input-container td {
+	padding: 0px 5px;
+}
+
+.input-container .input {
+	width: 50px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
